@@ -17,6 +17,10 @@ def homepage():
 def contatos():
     return render_template("contatos.html")
 
+@app.route("/teste")
+def teste():
+    return render_template("teste.html")
+
 
 @app.route("/usuarios/<nome_usuario>")
 def usuarios(nome_usuario):
